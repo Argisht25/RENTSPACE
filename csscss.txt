@@ -1,0 +1,651 @@
+* { 
+    margin: 0;
+    padding: 0; /* Убираем отступы и поля для всех элементов */
+   } 
+   *, *::before, *::after {
+    box-sizing: border-box;
+}
+
+header{
+    box-shadow: 0px 20px 20px -23px rgb(0 0 0 / 20%);
+    height: 30px; 
+    
+}
+.rentspace__name{
+    color: rgba(12, 38, 59, 0.925);
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    position: absolute;
+    margin-left: 187px;
+    padding-top: 17px;
+    display: flex;
+}
+.apartaments{
+    color: rgba(41, 25, 71, 0.26);
+    margin-top: 41px;
+    padding-left: 95px;
+    word-spacing: 12px;
+    font-size: 15px;
+}
+    
+.apartaments_p{
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left: 190px;
+    top: 30px;
+}
+
+/*navigator*/
+.page__elements{
+    opacity: 0;
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin-left: -332px;
+    margin-top: 100px;
+    padding: 0px 20px 49px;
+    transition: 0.4s all ease;
+
+ 
+}
+.pagges:hover .page__elements {
+    background-color: #ffffff;
+    display: flex;
+    opacity: 1;
+    transform: translateY(-21%);
+    transition: 0.4s all ease;
+}
+    
+.blod{
+    padding: 20px;
+}
+.pages__head , .pages__head2 , .pages__head3{
+    display: block;
+    position: relative;
+    font-weight: 700;
+    font-size: 22px;
+}
+.page__blok1, .page__blok2, .page__blok3{
+    padding-left: 0px;
+    width: 240px;
+    line-height: 40px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.team{
+    font-size: 21px;
+    text-align: start;
+    padding-left: 10px;
+   
+}
+.pages__head::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 110%;
+    background-color: rgba(21, 30, 48, 0.274);
+}
+.pages__head2::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 110%;
+    background-color: rgba(21, 30, 48, 0.274);
+}
+.pages__head3::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 110%;
+    background-color: rgba(21, 30, 48, 0.274);
+}
+
+.team > a{
+    color: rgba(8, 25, 51, 0.466);
+    font-family: system-ui;
+    
+}
+.team:hover{
+    background-color: rgb(64, 128, 224);
+}
+.strelka{
+    position: absolute;
+    color: blue;
+}
+.glava{
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    position: fixed;
+    z-index: 5;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    width: 110%;
+    height: 100px;
+    border: solid 2px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: rgb(20 23 22 / 12%);
+}
+.name_html{
+    z-index: 7;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    line-height: 50px;
+}
+.home{
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 60px;
+    font-family: system-ui;
+    line-height: 24px;
+    padding-bottom: 50px;
+
+}
+a{
+    text-decoration: none;
+}
+.rentspace_p{
+    line-height: 0px;
+}
+/*
+.navigator  {
+    top: 16px;
+    bottom: 16px;
+    position: absolute;
+    right: 162px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: block;
+    width: 100%;
+
+    }
+*/
+    nav > ul li {
+        list-style: none;
+    }
+
+    .menu_1 > a {
+        color: rgba(2, 5, 49, 0.404);
+       
+    }
+    .menu_1{
+        display: block;
+        text-align: start;
+    
+
+    }
+    .h1{
+      width: 150px;
+      position: absolute;
+      opacity: 0;
+      line-height: 25px;
+      font-size: 18px;
+      margin-top: 0px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: 1s ease;
+      text-align: start;
+      line-height: 36px;
+      padding: 16px 7px 14px 19px;
+      padding-left: 15px;
+      padding-right: 14px;
+      width: 185px;
+    }
+.servises:hover > .h1{
+    opacity: 1;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    text-align: start;
+    line-height: 36px;
+    padding: 16px 7px 14px 19px;
+    padding-left: 15px;
+    padding-right: 14px;
+    width: 185px;
+}
+
+ .home:hover{
+     color: red;
+    
+    
+     
+ }
+ .h1:hover{
+    background-color: turquoise;
+ }
+.cvv{
+    color: turquoise;
+}
+
+
+ /*body*/
+ .lnerier{
+     background: url("img/page01_slide01.jpg") center 50% no-repeat; 
+     background-size: cover;
+     height: 500px;
+     opacity: 0.8;
+     
+ }
+    .wher{
+        font-size: 60px;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-top: 170px;
+        margin-top: 40px;
+        font-family: sans-serif;
+    }
+    /*poisk*/
+    .poisk{
+        display: block;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 100px;
+        
+      
+    }
+    .property , .shearch{
+        width: 200px;
+        height: 50px;
+        justify-content: center;
+    }
+    .shearch{
+        background-color: red;
+        border: none;
+        position: relative;
+
+    }
+    .shearch::before{
+        content: "";
+        position: absolute;
+        border: solid 2px;
+        width: 50px;
+        left: 51px;
+        top: 0;
+    }
+  
+    .property{
+        border-radius: 5px;
+        border-color: rgb(66 63 54 / 54%);
+    }
+    .location{
+        width: 200px;
+        height: 45px;
+    }
+    .type{
+        display:inline block;
+        width: 200px;
+        height: 50px;
+    }
+/*recommended*/
+.recomended{
+    font-size: 35px;
+    font-family: fantasy;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 70px 0px 60px 0px;
+
+}
+.blok_1{
+    width: 388px;
+    height: 275px;
+    position: relative;
+   overflow: hidden;
+   margin-left: 25px;
+   display: inline-flex;
+   
+   
+  
+
+}
+/*
+    .img_00{
+        position: absolute;
+        display: block;
+        transition: 0.5s all ease;
+        width: 400px;
+}
+*/
+.img{
+    position: absolute;
+    display: block;
+    left: -40px;
+    transition: 0.5s all ease;
+    width: 430px;
+    height: 100%;
+}
+.text{
+    top: 120px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    z-index: 2;
+    padding-left: 20px;
+    transition: 0.5s all ease;
+
+}
+.blok_1:hover .imegis{
+    transform: translateX(6%);
+    transition: 0.5s all ease;
+    filter: brightness(0.5);
+    
+    
+}
+.blok_1:hover .text{
+    transform: translateY(-120%);
+    transition: 0.5s all ease;
+    opacity: 1;
+    z-index: 1;
+    padding-left: 20px;
+    
+}
+.imegis{
+    width: 430px;
+    height: 289px;
+    position: absolute;
+    transition: 0.5s all ease;
+    
+    
+    
+}
+.information{
+display: flex;
+}
+.newport{
+    color: rgb(71, 114, 255);
+    margin-bottom: 10px;
+    font-size: 23px;
+    font-family: system-ui;
+}
+.town{
+    padding-left: 48px;
+}
+
+.shapka{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px
+}
+.many{
+    display: flex;
+    position: absolute;
+    background: rgb(237, 45, 45);
+    z-index: 1;
+    bottom: 44px;
+    right: 0px;
+    width: 110px;
+    height: 42px;
+    font: 700 24px / 1 Ubuntu, sans-serif;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.day{
+    font-style: oblique;
+}
+.town, .lofts, .altit{
+    padding-left: 49px;
+}
+
+/*=========video=============*/
+
+.backgraund{
+    width: 100%;
+    position: relative;
+    
+}
+.contets{
+    position: absolute;
+    font-size: 50px;
+    z-index: 2;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.video{
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+
+.dumbs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 250px;
+}
+.tumb{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    font-size: 43px;
+    font-family: monospace;
+    font-weight: 900;
+    color: white;
+    margin: 0px 93px;
+    
+}
+.tumb::before{
+    content: "";
+    content: "";
+    position: absolute;
+    border: solid 2px;
+    top: 0px;
+    width: 100%;
+    bottom: 0;
+    color: rgb(253, 253, 253);
+    transition: 0.3s;
+}
+.tumb:hover::before{
+   transform: rotate(45deg);
+}
+.text_blok{
+    position: absolute;
+}
+.shapka_2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px
+
+}
+.title_text{
+    font-size: 55px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: system-ui;
+    margin: 56px 0 60px;
+}
+.number_text{
+    color: white;
+    font-size: 22px;
+    font-family: system-ui;
+    padding-top: 46px;
+}
+.blok_strik {
+    width: 285px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 25px;
+    display: inline-flex;
+}
+.blok_strik:hover .text_titl{
+    transform: translateY(-75%);
+    transition: 0.5s all ease;
+    opacity: 1;
+    z-index: 1;
+    padding-left: 68px;
+}
+
+.text_titl{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    padding-left: 68px;
+    transition: 0.5s all ease;
+    bottom: -50px;
+    line-height: 33px;
+
+}
+.blok_strik:hover .poto{
+    transform: translateX(15%);
+    transition: 0.4s all ease;
+    filter: brightness(0.7);
+}
+.imgw {
+    position: absolute;
+    display: block;
+    left: -40px;
+    transition: 0.5s all ease;
+    width: 335px;
+    height: 100%;
+}
+
+.poto{
+    height: 350px;
+    position: absolute;
+    transition: 0.5s all ease;
+    filter: brightness(0.8);
+    width: 100%;
+}
+.bob{
+    background-color: red;
+    color: white;
+    padding: 13px 33px;
+    font-size: 17px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    line-height: 1.25;
+}
+.infotrxt{
+    font-size: 23px;
+    margin-bottom: 30px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.unf{
+    margin-bottom: 60px;
+}
+.servis{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.all{
+    border: 1px solid transparent;
+    padding: 13px 33px;
+    background-color: red;
+    text-decoration: none;
+    color: rgb(233, 240, 239);
+    font-weight: 400;
+}
+.poto_fon{
+    background: url(img/page01_parallax01.jpg)  center 50%  no-repeat  ;
+    background-size: cover;
+    height: 700px;
+    background-attachment: fixed;
+}
+.hg{
+    position: relative;
+}
+.poisk_text, .imail{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.po_te{
+    width: 80%;
+}
+.isk_te{
+    width: 39%;
+}
+.local{
+    margin-right: 20px;
+}
+.text_area{
+    text-align: center;
+}
+.send{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.send_all{
+    border: 1px solid transparent;
+    padding: 10px 60px;
+    background-color: red;
+    text-decoration: none;
+    color: rgb(233, 240, 239);
+    font-size: 20px;
+}
+footer{
+    display: flex;
+    height: 140px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    background-color: #90a59e2b;
+}
+*******************************************************************
+    <a class="rentspace__name" href="rentspace.html" >RENTSPACE </a><br>
+   <a class="apartaments" href="rentspace.html" >Apartaments for rent</a>
+   ****************************************************************
+   header{
+    box-shadow: 0px 20px 20px -23px rgb(0 0 0 / 20%);
+    height: 30px; 
+    
+}
+.rentspace__name{
+    color: rgba(12, 38, 59, 0.925);
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    position: absolute;
+    margin-left: 187px;
+    padding-top: 17px;
+    display: flex;
+}
+
+.apartaments{
+    color: rgba(41, 25, 71, 0.26);
+    margin-top: 41px;
+    padding-left: 95px;
+    word-spacing: 12px;
+    font-size: 15px;
+}
